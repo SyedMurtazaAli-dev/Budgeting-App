@@ -1,11 +1,18 @@
 function getBudget(){
+    var totalbudget = document.getElementById("budget").value;
+    var totbud = document.getElementById("totBudget").innerHTML;
+    if( isNaN(totalbudget) ){
+        alert("please provide a number not string");
+        document.getElementById("budget").value = "";
+       }
+    else{
+
     var totbud = +document.getElementById("totBudget").innerHTML;
     if(totbud > 0){
         alert("you already set montly Budget");
         document.getElementById("budget").value = "";
     }
     else{
-
     var totalbudget = document.getElementById("budget").value;
     var totbud = document.getElementById("totBudget").innerHTML;
     if( isNaN(totalbudget) ){
@@ -16,6 +23,7 @@ function getBudget(){
     document.getElementById("totBudget").innerHTML = +totalbudget;
     document.getElementById("totBalance").innerHTML = +totalbudget;
     document.getElementById("budget").value = "";
+    }
     }
     }
 }
