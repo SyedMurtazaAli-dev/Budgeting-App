@@ -8,11 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<div class="inputValues">    
+<div>
 <div class="budgetBox">
-<h1 class="h1" >Budget</h1>
+<h2 class="h2" >Budget</h2>
 <input type="text" name="budget" placeholder="Enter Amount" id="budget"> <br> <br>
-<button class="button" style="vertical-align:middle" ><span>SetBudget</span></button>
+<button class="button"  ><span>SetBudget</span></button>
+</div>
+<div class="calculatonBox">
+<h4 class="h2">Total Budget</h4>
+<p class="h2 paraBg">000</p>
+<h4 class="h2">Total Expense</h4>
+<p class="h2 paraBg">000</p>
+<h4 class="h2">Current Balance</h4>
+<p class="h2 paraBg">000</p>
+</div>
+</div>
+<div class="Expense">
+<form action=""></form>
+<h2 class="h2" >Expense Details</h2>
+<label for="expense" class="h2">Expense:</label> 
+<input type="text" id="expense"  class="txtField "><br>
+<label for="dicription" class="h2">Discription:</label>
+<input type="text" id="discription"  class="txtField"><br>
+<label for="date" class="h2">Payment Date:</label>
+<input type="date" id="date"  class="txtField" > <br>
+<label for="category" class="h2">Category:</label>
+<select name="category" id="category" class="txtField" >
+    <option value="volvo">food</option>
+    <option value="saab">rent</option>
+    <option value="opel">petrole</option>
+    <option value="audi">purchase</option>
+</select> <br>
+<input class="button" type="submit" value="Submit">  
+</form>
+
+</div>
 </div>
 
     <script src="app.js"></script>

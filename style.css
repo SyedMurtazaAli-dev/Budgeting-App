@@ -1,19 +1,40 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.inputValues{
+    display: flex;
+}
 .budgetBox{
-    background-size: 500px;
     background-color: #F1F0EA;
-    margin: 50px;
-    margin-right: 900px;
-    padding: 50px;
+    margin: 5px;
+    padding: 40px;
     border: 0px solid #F1F0EA;
     border-radius: 10px;
+    height: 200px;
+}
+.calculatonBox{
+    background-color: #F1F0EA;
+    margin: 5px;
+    padding: 40px;
+    border: 0px solid #F1F0EA;
+    border-radius: 10px;
+    height: 300px;
+}
+.paraBg{
+background-color: #087CA7;
+opacity: 0.6;
+height: 30px;
+font-size: 20px;
+padding: 5px;
+border-radius: 5px;
 }
 #budget{
   width: 200px;
   height: 40px;
   font-size: 25px;
-
 }
-.h1{
+.h2{
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -30,6 +51,20 @@
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 5px;
   }
-  
-  .button:hover {opacity: 1}
+.button:hover {opacity: 1}
+.Expense{
+    background-color: #F1F0EA;
+    margin: 5px 0px;
+    padding: 40px;
+    border: 0px solid #F1F0EA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.txtField{
+    width: 400px;
+    height: 40px;
+    font-size: 25px;
+}
