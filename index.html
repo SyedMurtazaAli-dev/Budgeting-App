@@ -14,15 +14,15 @@
 <h2 class="h2" >Budget Details</h2>
 <label for="budget" class="h2">Budget:</label><br>
 <input type="text" name="budget" placeholder="Enter Amount" id="budget"> <br> <br>
-<button class="button" >SetBudget</button>
+<button class="button" onclick="getBudget()">SetBudget</button>
 </div>
 <div class="calculatonBox">
 <h4 class="h2">Total Budget</h4>
-<p class="paraBg">000</p>
+<p class="paraBg" id="totBudget">0</p>
 <h4 class="h2">Total Expense</h4>
-<p class="paraBg">000</p>
+<p class="paraBg" id="totExpense">0</p>
 <h4 class="h2">Current Balance</h4>
-<p class="paraBg">000</p>
+<p class="paraBg" id="totBalance">0</p>
 </div>
 </div>
 <div class="Expense">
@@ -41,7 +41,7 @@
     <option value="opel">petrole</option>
     <option value="audi">purchase</option>
 </select> <br>
-<input class="button" type="submit" value="Submit">  
+<input class="button" type="submit" onclick="addExpence()" value="Submit">  
 </form>
 </div>
 <div class="expenselist">
