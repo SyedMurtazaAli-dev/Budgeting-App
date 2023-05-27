@@ -4,6 +4,8 @@ function getBudget(){
         alert("you already set montly Budget");
         document.getElementById("budget").value = "";
     }
+    else{
+
     var totalbudget = document.getElementById("budget").value;
     var totbud = document.getElementById("totBudget").innerHTML;
     if( isNaN(totalbudget) ){
@@ -14,6 +16,7 @@ function getBudget(){
     document.getElementById("totBudget").innerHTML = +totalbudget;
     document.getElementById("totBalance").innerHTML = +totalbudget;
     document.getElementById("budget").value = "";
+    }
     }
 }
 function addExpence(){
