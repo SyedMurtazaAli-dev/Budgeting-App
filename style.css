@@ -71,3 +71,13 @@ color: #F1F0EA;
     height: 40px;
     font-size: 25px;
 }
+.expenselist{
+    background-color: #F1F0EA;
+    margin: 5px 5px;
+    padding: 40px;
+    border: 0px solid #F1F0EA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
