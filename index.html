@@ -35,17 +35,32 @@
 <label for="date" class="h2">Payment Date:</label>
 <input type="date" id="date"  class="txtField" > <br>
 <label for="category" class="h2">Category:</label>
-<select name="category" id="category" class="txtField" >
-    <option value="volvo">food</option>
-    <option value="saab">rent</option>
-    <option value="opel">petrole</option>
-    <option value="audi">purchase</option>
+<select name="category" id="category"  class="txtField" >
+    <option value="" selected>select your category</option>
+    <option value="food">food</option>
+    <option value="rent">rent</option>
+    <option value="petrole">petrole</option>
+    <option value="purchase">purchase</option>
 </select> <br>
 <input class="button" type="submit" onclick="addExpence()" value="Submit">  
 </form>
 </div>
 <div class="expenselist">
 <h2 class="h2" >Expenses List</h2>
+<table>
+    <tr>
+        <td >Category</td>
+        <td >Amount</td>
+        <td >Date</td>
+        <td >Discription</td>
+    </tr>
+    <tr>
+        <td id="expCat"></td>
+        <td id="expAmo"></td>
+        <td id="expDat"></td>
+        <td id="expDis"></td>
+    </tr>
+</table>
 
 </div>
 </div>
