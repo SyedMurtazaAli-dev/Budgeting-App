@@ -81,3 +81,19 @@ color: #F1F0EA;
     flex-direction: column;
     width: 500px;
 }
+.ExpList{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #087CA7;
+    border-radius: 5px;
+    color: #F1F0EA;
+    opacity: 0.6;
+    display: none;
+}
+#expDat{
+    font-size: small;
+    margin-top: -15px;
+}

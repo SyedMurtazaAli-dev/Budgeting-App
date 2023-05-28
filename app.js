@@ -1,3 +1,5 @@
+let arr[];
+
 const expenses = {
     expence: "",
     category: category,
@@ -69,26 +71,20 @@ else{
     }
     }
     if(objectstore === true){  // here check to store value in object and not
-/*     var expCat = document.getElementById("expCat").innerHTML;
-    var expAmo = document.getElementById("expAmo").innerHTML;
-    var expDat = document.getElementById("expDat").innerHTML;
-    var expDat = document.getElementById("expDis").innerHTML; */
-    this.expence = document.getElementById("expense").value;
+    document.getElementById("ExpList").style.display="block";
+    document.getElementById("ExpList").style.display="flex";
+    this.expence = "-$" + document.getElementById("expense").value;
     this.discription = document.getElementById("discription").value;
     this.category = document.getElementById("category").value;
     this.date = document.getElementById("date").value;
-        document.getElementById("expCat").innerHTML = this.category
-        document.getElementById("expAmo").innerHTML = this.expence
-        document.getElementById("expDat").innerHTML = this.date
-        document.getElementById("expDis").innerHTML = this.discription
     document.getElementById("expense").value = "";
     document.getElementById("discription").value = "";
     document.getElementById("date").value = "";
     document.getElementById("category").value = "";
-    console.log(this.expence)
-    console.log(this.discription)
-    console.log(this.date)
-    console.log(this.category)
+    document.getElementById("expCat").innerHTML = this.category
+    document.getElementById("expAmo").innerHTML = this.expence
+    document.getElementById("expDat").innerHTML = this.date
+    document.getElementById("expDis").innerHTML = this.discription
 }
 }
 }
