@@ -1,4 +1,3 @@
-let arr[];
 
 const expenses = {
     expence: "",
@@ -6,6 +5,7 @@ const expenses = {
     discription: discription,
     date: date
 };
+
 function getBudget(){
     var totalbudget = document.getElementById("budget").value;
     var totbud = document.getElementById("totBudget").innerHTML;
