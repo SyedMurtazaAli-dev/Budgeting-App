@@ -1,11 +1,13 @@
-
+let arr = [];
+function addobject(){
 const expenses = {
-    expence: "",
+    expence: expence,
     category: category,
     discription: discription,
     date: date
 };
-
+return expenses
+}
 function getBudget(){
     var totalbudget = document.getElementById("budget").value;
     var totbud = document.getElementById("totBudget").innerHTML;
@@ -77,14 +79,17 @@ else{
     this.discription = document.getElementById("discription").value;
     this.category = document.getElementById("category").value;
     this.date = document.getElementById("date").value;
+    arr.push(addobject());
+    console.log(arr)
     document.getElementById("expense").value = "";
     document.getElementById("discription").value = "";
     document.getElementById("date").value = "";
     document.getElementById("category").value = "";
-    document.getElementById("expCat").innerHTML = this.category
-    document.getElementById("expAmo").innerHTML = this.expence
-    document.getElementById("expDat").innerHTML = this.date
-    document.getElementById("expDis").innerHTML = this.discription
+    let element = arr[0]
+    document.getElementById("expCat").innerHTML = element.category
+    document.getElementById("expAmo").innerHTML = element.expence
+    document.getElementById("expDat").innerHTML = element.date
+    document.getElementById("expDis").innerHTML = element.discription
 }
 }
 }
