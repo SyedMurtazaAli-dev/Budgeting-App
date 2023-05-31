@@ -1,11 +1,13 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
 }
-.inputValues{
+
+.inputValues {
     display: flex;
 }
-.budgetBox{
+
+.budgetBox {
     background-color: #F1F0EA;
     margin: 5px;
     padding: 40px;
@@ -13,7 +15,8 @@ body{
     border-radius: 10px;
     height: 200px;
 }
-.calculatonBox{
+
+.calculatonBox {
     background-color: #F1F0EA;
     margin: 5px;
     padding: 40px;
@@ -21,26 +24,30 @@ body{
     border-radius: 10px;
     height: 300px;
 }
-.paraBg{
-background-color: #087CA7;
-opacity: 0.6;
-height: 25px;
-font-size: 20px;
-padding: 5px;
-padding-left: 10px;
-border-radius: 5px;
-color: #F1F0EA;
+
+.paraBg {
+    background-color: #087CA7;
+    opacity: 0.6;
+    height: 25px;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: #F1F0EA;
 
 }
-#budget{
-  width: 200px;
-  height: 40px;
-  font-size: 25px;
+
+#budget {
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
 }
-.h2{
+
+.h2 {
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .button {
     background-color: #087CA7;
     border: none;
@@ -55,9 +62,13 @@ color: #F1F0EA;
     text-decoration: none;
     cursor: pointer;
     border-radius: 5px;
-  }
-.button:hover {opacity: 1}
-.Expense{
+}
+
+.button:hover {
+    opacity: 1
+}
+
+.Expense {
     background-color: #F1F0EA;
     margin: 5px 0px;
     padding: 40px;
@@ -66,11 +77,13 @@ color: #F1F0EA;
     display: flex;
     flex-direction: column;
 }
-.txtField{
+
+.txtField {
     width: 400px;
     height: 40px;
     font-size: 25px;
 }
+
 .expenselist{
     background-color: #F1F0EA;
     margin: 5px 5px;
@@ -81,7 +94,8 @@ color: #F1F0EA;
     flex-direction: column;
     width: 500px;
 }
-.ExpList{
+
+.ExpList {
     display: flex;
     justify-content: space-between;
     padding-left: 25px;
@@ -91,8 +105,8 @@ color: #F1F0EA;
     border-radius: 5px;
     color: #F1F0EA;
     opacity: 0.6;
-    display: none;
 }
+
 #expDat{
     font-size: small;
     margin-top: -15px;

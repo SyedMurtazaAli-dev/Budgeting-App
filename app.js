@@ -73,23 +73,58 @@ else{
     }
     }
     if(objectstore === true){  // here check to store value in object and not
-    document.getElementById("ExpList").style.display="block";
-    document.getElementById("ExpList").style.display="flex";
+
+/*     document.getElementById("ExpList").style.display="block";
+    document.getElementById("ExpList").style.display="flex"; */
+
     this.expence = "-$" + document.getElementById("expense").value;
     this.discription = document.getElementById("discription").value;
     this.category = document.getElementById("category").value;
     this.date = document.getElementById("date").value;
     arr.push(addobject());
-    console.log(arr)
+    let categoryName = document.getElementById("category").value;
+    let expenceAmount = "-$" + document.getElementById("expense").value;
+    let expenceDate = document.getElementById("date").value;
     document.getElementById("expense").value = "";
     document.getElementById("discription").value = "";
     document.getElementById("date").value = "";
     document.getElementById("category").value = "";
-    let element = arr[0]
-    document.getElementById("expCat").innerHTML = element.category
+/*     let element = arr[0] */
+    let table = document.getElementById("listExpence");
+    let tr = document.createElement("tr");
+    let td = document.createElement("td");
+    let div = document.createElement("div");
+    let h3i = document.createElement("h3");
+    let p = document.createElement("p"); 
+    let div1 = document.createElement("div");
+    let h3ii = document.createElement("h3");
+
+/*     td.innerHTML = element.expence;
+    h3i.innerHTML = element.category
+    h3ii.innerHTML = element.expence
+    p.innerHTML = element.date */
+    h3i.innerHTML = categoryName;
+    p.innerHTML = expenceDate;
+    h3ii.innerHTML = expenceAmount;
+    table.appendChild(tr);
+    tr.appendChild(td);
+    td.appendChild(div);
+    td.appendChild(div1);
+    div.appendChild(h3i);
+    div.appendChild(p);
+    div1.appendChild(h3ii);
+
+/*     document.querySelector(td).className += " ExpList"; */
+/*     console.log(document.querySelector(HTMLTableCellElement));
+    document.getElementsByName("td") */
+ 
+/*     document.getElementById("expCat").innerHTML = element.category
     document.getElementById("expAmo").innerHTML = element.expence
     document.getElementById("expDat").innerHTML = element.date
-    document.getElementById("expDis").innerHTML = element.discription
+    document.getElementById("expDis").innerHTML = element.discription */
+
+
 }
 }
 }
+

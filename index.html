@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,63 +8,55 @@
     <title>Budgeting App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="inputValues">    
-<div>
-<div class="budgetBox">
-<h2 class="h2" >Budget Detail</h2>
-<label for="budget" class="h2">Budget:</label><br>
-<input type="text" name="budget" placeholder="Enter Amount" id="budget"> <br> <br>
-<button class="button" onclick="getBudget()">SetBudget</button>
-</div>
-<div class="calculatonBox">
-<h4 class="h2">Total Budget</h4>
-<p class="paraBg" id="totBudget">0</p>
-<h4 class="h2">Total Expense</h4>
-<p class="paraBg" id="totExpense">0</p>
-<h4 class="h2">Current Balance</h4>
-<p class="paraBg" id="totBalance">0</p>
-</div>
-</div>
-<div class="Expense">
-<form action=""></form>
-<h2 class="h2" >Expense Details</h2>
-<label for="expense" class="h2"  >Expense Amount:</label> 
-<input type="text" id="expense" placeholder="Enter Expense Amount" class="txtField "><br>
-<label for="dicription" class="h2">Discription:</label>
-<input type="text" id="discription" placeholder="Enter Discription of Expense" class="txtField"><br>
-<label for="date" class="h2">Payment Date:</label>
-<input type="date" id="date"  class="txtField" > <br>
-<label for="category" class="h2">Category:</label>
-<select name="category" id="category"  class="txtField" >
-    <option value="" selected>select your category</option>
-    <option value="food">food</option>
-    <option value="rent">rent</option>
-    <option value="petrole">petrole</option>
-    <option value="purchase">purchase</option>
-</select> <br>
-<input class="button" type="submit" onclick="addExpence()"  value="Submit">  
-</form>
-</div>
-<div class="expenselist">
-<h2 class="h2" >Expenses List</h2>
-<table >
-    <tr id="table">
-        <td class="ExpList" id="ExpList">
-            <div class="item" >
-                <h3 id="expCat" ></h3>
-                <p id="expDat" ></p>
-            </div>
-            <div>
-                <h3 id="expAmo" ></h3>
-            </div>
-        </td>
-    </tr>
-</table>
 
-</div>
-</div>
+<body>
+    <div class="inputValues">
+        <div>
+            <div class="budgetBox">
+                <h2 class="h2">Budget Detail</h2>
+                <label for="budget" class="h2">Budget:</label><br>
+                <input type="text" name="budget" placeholder="Enter Amount" id="budget"> <br> <br>
+                <button class="button" onclick="getBudget()">SetBudget</button>
+            </div>
+            <div class="calculatonBox">
+                <h4 class="h2">Total Budget</h4>
+                <p class="paraBg" id="totBudget">0</p>
+                <h4 class="h2">Total Expense</h4>
+                <p class="paraBg" id="totExpense">0</p>
+                <h4 class="h2">Current Balance</h4>
+                <p class="paraBg" id="totBalance">0</p>
+            </div>
+        </div>
+        <div class="Expense">
+            <form action=""></form>
+            <h2 class="h2">Expense Details</h2>
+            <label for="expense" class="h2">Expense Amount:</label>
+            <input type="text" id="expense" placeholder="Enter Expense Amount" class="txtField "><br>
+            <label for="dicription" class="h2">Discription:</label>
+            <input type="text" id="discription" placeholder="Enter Discription of Expense" class="txtField"><br>
+            <label for="date" class="h2">Payment Date:</label>
+            <input type="date" id="date" class="txtField"> <br>
+            <label for="category" class="h2">Category:</label>
+            <select name="category" id="category" class="txtField">
+                <option value="" selected>select your category</option>
+                <option value="food">food</option>
+                <option value="rent">rent</option>
+                <option value="petrole">petrole</option>
+                <option value="purchase">purchase</option>
+            </select> <br>
+            <input class="button" type="submit" onclick="addExpence()" value="Submit">
+            </form>
+        </div>
+        <div class="expenselist">
+            <h2 class="h2">Expenses List</h2>
+            <table id="listExpence">
+
+            </table>
+
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
