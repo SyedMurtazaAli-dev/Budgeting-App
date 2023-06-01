@@ -64,18 +64,15 @@ else{
     var curBala = document.getElementById("totBalance").innerHTML;
     var totBala = +curBala - +totExpence;
     document.getElementById("totBalance").innerHTML = +totBala;
-    objectstore = true; // if this 'if' condition is execute so store values in object
+objectstore = true; // if this condition is execute so store values in object it help to line no 75 in if condition
 
     }
     else{
-    alert("your expense is larger Then you Budget");
+    alert("your dont have more budget Amount");
     document.getElementById("expense").value = "";
     }
     }
     if(objectstore === true){  // here check to store value in object and not
-
-/*     document.getElementById("ExpList").style.display="block";
-    document.getElementById("ExpList").style.display="flex"; */
 
     this.expence = "-$" + document.getElementById("expense").value;
     this.discription = document.getElementById("discription").value;
@@ -89,13 +86,17 @@ else{
     document.getElementById("discription").value = "";
     document.getElementById("date").value = "";
     document.getElementById("category").value = "";
+
 /*     let element = arr[0] */
+
     let table = document.getElementById("listExpence");
     let tr = document.createElement("tr");
     let td = document.createElement("td");
+    td.classList.add("ExpList");
     let div = document.createElement("div");
     let h3i = document.createElement("h3");
-    let p = document.createElement("p"); 
+    let p = document.createElement("p");
+    p.classList.add("expDate"); 
     let div1 = document.createElement("div");
     let h3ii = document.createElement("h3");
 
@@ -103,6 +104,7 @@ else{
     h3i.innerHTML = element.category
     h3ii.innerHTML = element.expence
     p.innerHTML = element.date */
+
     h3i.innerHTML = categoryName;
     p.innerHTML = expenceDate;
     h3ii.innerHTML = expenceAmount;
@@ -114,10 +116,6 @@ else{
     div.appendChild(p);
     div1.appendChild(h3ii);
 
-/*     document.querySelector(td).className += " ExpList"; */
-/*     console.log(document.querySelector(HTMLTableCellElement));
-    document.getElementsByName("td") */
- 
 /*     document.getElementById("expCat").innerHTML = element.category
     document.getElementById("expAmo").innerHTML = element.expence
     document.getElementById("expDat").innerHTML = element.date

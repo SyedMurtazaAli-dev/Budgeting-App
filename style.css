@@ -107,7 +107,7 @@ body {
     opacity: 0.6;
 }
 
-#expDat{
+.expDate{
     font-size: small;
     margin-top: -15px;
 }
